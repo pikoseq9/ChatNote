@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Card>
-        <ApiKeyForm />
+        <Chat />
       </Card>
     </div>
   );

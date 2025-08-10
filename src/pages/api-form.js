@@ -4,7 +4,7 @@ import ApiKeyForm from "../components/ApiKeyForm";
 
 export default function ApiFormPage() {
   const handleApiKeySubmit = (apiKey) => {
-    console.log("Otrzymany API key:", apiKey);
+    //here the key's usage
   };
 
   return (
