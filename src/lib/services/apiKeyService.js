@@ -5,7 +5,7 @@ export async function getApiKey(apiKeyId) {
   const collection = getCollection("ApiKey");
   const id = ObjectId.createFromHexString(apiKeyId);
   const result = await collection.findOne({ _id: id });
-  console.log(result);
+
   if (result === null) return null;
   return result.apiKey;
 }
@@ -22,10 +22,8 @@ export async function SaveApiKey(apiKey) {
 export async function deleteApiKey(apiKeyId) {
   const collection = getCollection("ApiKey");
   const id = ObjectId.createFromHexString(apiKeyId);
-  console.log(apiKeyId);
+
   const result = await collection.deleteOne({ _id: id });
-  console.log(result.deletedCount);
-  console.log(result.acknowledged);
   if (!result.acknowledged) {
     throw new Error("Problem with database");
   }

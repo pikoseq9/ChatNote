@@ -4,7 +4,6 @@ import { success } from "zod";
 
 export async function GET(request, { params }) {
   const { id } = await params;
-  console.log(id);
   if (!id) {
     return NextResponse.json({ error: "Missing API key ID" }, { status: 400 });
   }
