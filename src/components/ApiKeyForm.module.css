@@ -1,0 +1,8 @@
+.api-key-form-box {
+  width: fit-content;
+}
+
+.api-key-form-box h1 {
+  margin: 0;
+  display: inline-block;
+}
