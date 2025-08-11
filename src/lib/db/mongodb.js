@@ -1,4 +1,4 @@
-import { MONGO_DB_URI_ENV } from "./utils/env";
+import { MONGO_DB_URI_ENV } from "../utils/env";
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
