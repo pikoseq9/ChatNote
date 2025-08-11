@@ -12,7 +12,10 @@ export async function POST(request) {
   try {
     const apiKeyId = await SaveApiKey(parsed.data.apiKey);
     return NextResponse.json(
-      { message: `Succesfully Saved ApiKey with ID: ${apiKeyId}` },
+      {
+        message: `Succesfully Saved ApiKey with ID: ${apiKeyId}`,
+        data: apiKeyId,
+      },
       { status: 201 }
     );
   } catch (exception) {
