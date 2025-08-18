@@ -1,8 +1,45 @@
-.api-key-form-box {
-  width: fit-content;
+.api-key-form-box form {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.api-key-form-box h1 {
-  margin: 0;
-  display: inline-block;
+.api-key-form-box input {
+  flex: 2;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.api-key-form-box input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.api-key-form-box button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #a8e6a2, #4caf50);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.api-key-form-box button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.api-key-form-box button:active {
+  transform: translateY(0);
+  box-shadow: none;
 }

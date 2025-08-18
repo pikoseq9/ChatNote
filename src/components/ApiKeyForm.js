@@ -55,9 +55,9 @@ export default function ApiKeyForm({ onSubmitApiKey }) {
           placeholder="Type in your API key"
           value={apiKey}
           onChange={(e) => setApiKey(e.target.value)}
-          disabled={!!savedId}
+          disabled={!savedId}
         />
-        <button type="submit">Save API Key</button>
+        <button type="submit">&#10004;</button>
 
         {message && <p style={{ color: "green" }}></p>}
         {error && <p style={{ color: "red" }}></p>}
